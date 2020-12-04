@@ -1,6 +1,8 @@
 package com.test.freecrm.qa.testcases;
 
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -129,15 +131,15 @@ public class HomePageTestCases extends TestBaseFreeCRM {
 		return data;
 	}
 
-//	@Test(priority = 12 , dataProvider = "getFreeCRMTestData")
-//	public void searchBoxTest(String searchText) {
-//		HomePageObj.searchText(searchText);
-//
-//		WebElement searchResultLabel = driverObj
-//				.findElement(By.xpath("//div[@Class=\"ui header item mb5 light-black\"]"));
-//		String SearchResultText = searchResultLabel.getText();
-//		Assert.assertEquals(SearchResultText, "Search Results: "+searchText);
-//	}
+	@Test(priority = 12 , dataProvider = "getFreeCRMTestData")
+	public void searchBoxTest(String searchText) {
+		HomePageObj.searchText(searchText);
+
+		WebElement searchResultLabel = driverObj
+				.findElement(By.xpath("//div[@Class=\"ui header item mb5 light-black\"]"));
+		String SearchResultText = searchResultLabel.getText();
+		Assert.assertEquals(SearchResultText, "Search Results: "+searchText);
+	}
 
 	@AfterMethod
 	public void tearDown() {
