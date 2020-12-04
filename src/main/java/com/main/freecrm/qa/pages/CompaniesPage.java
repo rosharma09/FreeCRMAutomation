@@ -1,0 +1,11 @@
+package com.main.freecrm.qa.pages;
+
+import com.main.freecrm.qa.base.TestBaseFreeCRM;
+
+public class CompaniesPage extends TestBaseFreeCRM{
+	
+	/*This is the page factory for the Companies page*/
+	
+	
+
+}
