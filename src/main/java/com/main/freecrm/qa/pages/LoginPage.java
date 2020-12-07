@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.main.freecrm.qa.base.TestBaseFreeCRM;
+import com.main.freecrm.qa.util.TestUtil;
 
 public class LoginPage extends TestBaseFreeCRM {
 
@@ -43,7 +44,7 @@ public class LoginPage extends TestBaseFreeCRM {
 
 	/* Create the features available for the login page */
 
-	public  String fetchTitle() {
+	public String fetchTitle() {
 
 		// To get the title of the page
 		return driverObj.getTitle();
@@ -52,28 +53,30 @@ public class LoginPage extends TestBaseFreeCRM {
 
 	public boolean isNotificDisplayed() {
 		// To check whether the element passed is displayed
+
+		TestUtil.explicitWait(notificationIcon, 40);
 		return notificationIcon.isDisplayed();
 
 	}
 
-	public  ForgotPasswordPage forgotPassword() {
+	public ForgotPasswordPage forgotPassword() {
 
 		LoginPage.frgtPwd.click();
 
 		return new ForgotPasswordPage();
 	}
 
-	public  ClassicCRMPage classicCRM() {
+	public ClassicCRMPage classicCRM() {
 		classicLink.click();
 		return new ClassicCRMPage();
 	}
 
-	public  SignUpPage signUp() {
+	public SignUpPage signUp() {
 		signUpLink.click();
 		return new SignUpPage();
 	}
 
-	public  HomePage login(String eid, String pwd) {
+	public HomePage login(String eid, String pwd) {
 		emailAdd.sendKeys(eid);
 		password.sendKeys(pwd);
 		loginBtn.click();

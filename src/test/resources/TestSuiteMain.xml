@@ -12,7 +12,8 @@
 		<classes>
 			<class name="com.test.freecrm.qa.testcases.LoginPageTestCases"></class>
 			<class name="com.test.freecrm.qa.testcases.HomePageTestCases"></class>
-			<class name="com.test.freecrm.qa.testcases.ContactPageTestCases"></class>
+			<class
+				name="com.test.freecrm.qa.testcases.ContactPageTestCases"></class>
 
 		</classes>
 	</test>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FREE CRM Application Test Automation Test Suite">
+<suite name="FREE CRM Application Login Page Test Automation Test Suite">
 
 	<listeners>
 		<listener
@@ -11,9 +11,6 @@
 	<test name="Free CRM App Test Cases">
 		<classes>
 			<class name="com.test.freecrm.qa.testcases.LoginPageTestCases"></class>
-			<class name="com.test.freecrm.qa.testcases.HomePageTestCases"></class>
-			<class name="com.test.freecrm.qa.testcases.ContactPageTestCases"></class>
-
 		</classes>
 	</test>
 </suite>

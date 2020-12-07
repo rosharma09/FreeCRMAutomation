@@ -51,27 +51,27 @@ public class LoginPageTestCases extends TestBaseFreeCRM {
 		Assert.assertTrue(isDis);
 	}
 
-	@Test(priority = 3)
-	public void forgotPasswordTest() {
-		ForgotPasswordPageObj = loginPageObj.forgotPassword();
-	}
-
-	@Test(priority = 4)
-	public void classicCRMTest() {
-		ClassicCRMPageobj = loginPageObj.classicCRM();
-	}
-
-	@Test(priority = 5)
-	public void signUpTest() {
-		SignUpPageObj = loginPageObj.signUp();
-	}
-
-	@Test(priority = 6)
-	public void loginTest() {
-
-		HomePageObj = loginPageObj.login(prop.getProperty("username"), prop.getProperty("password"));
-
-	}
+//	@Test(priority = 3)
+//	public void forgotPasswordTest() {
+//		ForgotPasswordPageObj = loginPageObj.forgotPassword();
+//	}
+//
+//	@Test(priority = 4)
+//	public void classicCRMTest() {
+//		ClassicCRMPageobj = loginPageObj.classicCRM();
+//	}
+//
+//	@Test(priority = 5)
+//	public void signUpTest() {
+//		SignUpPageObj = loginPageObj.signUp();
+//	}
+//
+//	@Test(priority = 6)
+//	public void loginTest() {
+//
+//		HomePageObj = loginPageObj.login(prop.getProperty("username"), prop.getProperty("password"));
+//
+//	}
 
 	@AfterMethod
 	public static void tearDown() {
